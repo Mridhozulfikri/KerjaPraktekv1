@@ -69,8 +69,8 @@
                   <td>{{ $item-> harga_jual}}</td>
                   <td>{{ $item-> total_penjualan}}</td>
                   <td>  <input data-id="{{$item->id}}" class="toggle-class" type="checkbox"
-                    data-onstyle="success" data-offstyle="danger" data-toggle="toggle"
-                    data-on="Hadir" data-off="Tidak Hadir" {{ $item->status_invoice ? 'checked' : '' }}></td>
+                    data-onstyle="danger" data-offstyle="success" data-toggle="toggle"
+                    data-on="Belum Lunas" data-off="Lunas" {{ $item->status_invoice ? 'checked' : '' }}></td>
 
               </tr>
 

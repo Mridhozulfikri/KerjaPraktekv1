@@ -2,7 +2,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Edit Barang Masuk</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Edit Barang </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -16,19 +16,19 @@
             </div>
             <div class="mb-3">
                 <label for="recipient-name"  class="col-form-label">Nama Barang:</label>
-                <input type="text" name="namabrg" class="form-control" id="edit-namabarang">
+                <input type="text" name="namabrg" class="form-control" id="edit-namabarang" required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" >
             </div>
             <div class="mb-3">
                 <label for="recipient-name"  class="col-form-label">Harga Beli:</label>
-                <input type="text" name="hrgbeli" class="form-control" id="edit-hargabeli">
+                <input type="text" name="hrgbeli" class="form-control" id="edit-hargabeli" required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" >
             </div>
             <div class="mb-3">
                 <label for="recipient-name" class="col-form-label">Harga Jual:</label>
-                <input type="text" name="hrgjual" class="form-control" id="edit-hargajual">
+                <input type="text" name="hrgjual" class="form-control" id="edit-hargajual" required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" >
             </div>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Supplier:</label>
-              <input type="text" name="supplier" class="form-control" id="edit-supplier">
+              <input type="text" name="supplier" class="form-control" id="edit-supplier" required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" >
           </div>
         
         </div>

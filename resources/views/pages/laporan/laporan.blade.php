@@ -136,12 +136,8 @@
                       <tr>
                         <th scope="col">No</th>
                         <th scope="col">TGL MASUK</th>
-                        {{-- <th scope="col">NAMA BARANG</th>
-                        <th scope="col">QTY</th> --}}
                         <th scope="col">TOTAL PEMBELIAN</th>
                         <th scope="col">TGL KELUAR</th>
-                        {{-- <th scope="col">NAMA BARANG</th>
-                        <th scope="col">QTY</th>                         --}}
                         <th scope="col">TOTAL PENJUALAN</th>
                         <th scope="col">KEUNTUNGAN</th>
                       </tr>

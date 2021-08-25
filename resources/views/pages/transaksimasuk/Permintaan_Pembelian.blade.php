@@ -26,9 +26,9 @@
     <nav class="navbar navbar-light ">
         <div class="container-fluid">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#tambahpo">Tambah PP</button>  
+            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#tambahpo">Tambah Permintaan Pembelian</button>  
             <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Pencarian No. PP" name="search" value="{{ request('search') }}" aria-label="Search">
+              <input class="form-control me-2" type="text" placeholder="Masukan No PP" name="search" value="{{ request('search') }}" aria-label="Search"> 
               <button class="btn btn-outline-success" type="submit">Cari</button>
             </form>
         </div>        
@@ -107,12 +107,12 @@
               
               <td>             
                 <button type="button" 
-                  class="btn btn-sm btn-secondary"
+                  class="btn btn-sm btn-warning"
                   data-bs-toggle="modal" 
                   data-bs-target="#addtobm"  
                   id="btn-addto-bm"
                   data-id="{{$data->id}}" 
-                  >Add To BM</button>
+                  >Verifikasi</button>
               </td>              
             </td>
           </tr>

@@ -7,7 +7,7 @@
 <style>
   .my-custom-scrollbar {
 position: relative;
-height: 300px;
+height: 500px;
 overflow: auto;
 }
 .table-wrapper-scroll-y {
@@ -21,7 +21,7 @@ display: block;
 <div class="container">
   <div class="row page-titles">
     <div class="col-md-5 col-8 align-self-center">
-      <h3 class="text-themecolor">Halaman Master Pembeli</h3>
+      <h3 class="text-themecolor">Halaman Kelola Pembeli</h3>
        
     </div>
     

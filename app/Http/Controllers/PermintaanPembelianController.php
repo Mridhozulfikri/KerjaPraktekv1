@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\PermintaanPembelian;
 use App\Models\MasterBarang;
 use App\Models\Masterpembeli;
-use App\Models\PermintaanPembelian;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -126,8 +125,22 @@ class PermintaanPembelianController extends Controller
      * @param  \App\Models\PermintaanPembelian  $perintaanPembelian
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PermintaanPembelian $permintaanPembelian)
+    public function update(Request $request, $id)
     {
+        PermintaanPembelian::where('id', $request->get('id'))
+         ->update([
+             // kiri nama tabel database, yang kanan name di modal
+             'no_pp' => $request->get('no_pp'),
+             'tgl_pp' => $request->get('tgl_pp'),
+             'master_pembelis_id' => $request->get('pemesan'),
+            // 'kode_barang' => $request->get('namabrg'),
+             'master_barangs_id' => $request->get('kode_barang'),
+             'qty' => $request->get('qty'),
+            // 'harga_beli' => $request->get('harga_beli'),
+             
+         ]);      
+       
+         return redirect('/PP')->with('updated_success', 'Data Berhasil di Ubah');
         // $id = $request->get('id');
         // dd($id);
 

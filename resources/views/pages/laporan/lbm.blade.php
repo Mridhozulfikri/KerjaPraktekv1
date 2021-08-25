@@ -11,15 +11,17 @@
 			font-size: 9pt;
 		}
 	</style>
+	<p></p>
+	<div class="container">
 	<p>@php
 		date_default_timezone_set('Asia/Jakarta');
 		echo '' . date('j F, Y');
 		@endphp</p>
 	<center>
-		<h5>L B M</h4>
+		<h5>Laporan Barang Masuk</h4>
 	</center>
 	
-	<table class='table table-bordered'>
+	<table class="table table-success table-striped">
 		<thead>
             <tr>
                 <th>No</th>
@@ -43,6 +45,7 @@
             @endforeach
           </tbody>
 	</table>
+	</div>
  
 </body>
 </html>

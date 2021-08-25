@@ -37,8 +37,8 @@
                   </select>
                 </div>
                 <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Kode Barang :</label>
-                    <div id="kodebrg"></div>
+                    <label for="recipient-name" class="col-form-label" hidden>Kode Barang :</label>
+                    <div id="kodebrg" hidden></div>
                     {{--  <input type="text" name="kodebrg1" id="kodebrg1" class="form-control"  required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" oninput="setCustomvalidity('')" readonly>  --}}
                   </div>
                   <div class="mb-3">
@@ -46,8 +46,8 @@
                     <input type="number" name="qty" class="form-control"  required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" oninput="setCustomvalidity('')">
                   </div>
                   <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Harga Beli :</label>
-                    <div id="hargabeli"></div>
+                    <label for="recipient-name" class="col-form-label" hidden>Harga Beli :</label>
+                    <div id="hargabeli" hidden></div>
                   {{--  <input type="number" name="hrgbeli" class="form-control"  required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" oninput="setCustomvalidity('')" readonly>  --}}
                 </div>              
               </div>

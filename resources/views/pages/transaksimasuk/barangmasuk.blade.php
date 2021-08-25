@@ -22,7 +22,8 @@
     <div class="col-md-5 col-8 align-self-center">
       <h3 class="text-themecolor">Halaman Barang Masuk</h3>       
     </div>
-    
+    <div>
+      <br>
     <nav class="navbar navbar-light ">
         <div class="container-fluid">
             <!-- Button trigger modal -->           
@@ -32,6 +33,7 @@
             </form>
         </div>        
     </nav>
+  </div>
 
    {{-- tabel barang masuk --}}
     <div class="table-wrapper-scroll-y my-custom-scrollbar">
@@ -49,6 +51,7 @@
             <th scope="col">Harga Beli</th>
             <th scope="col">Total</th>            
             <th scope="col">Opsi</th>
+            <th scope="col">Opsi 2</th>
           </tr>
         </thead>
         <tbody>
@@ -76,12 +79,45 @@
                   data-id="{{$data->id}}" 
                   >Batal</button>
               </td> 
+              <td>             
+                <button type="button" 
+                  class="btn btn-sm btn-warning"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#data-barang"  
+                  id="btn-data-barang"
+                  data-id="{{ $data->id }}" 
+                  >Kirim</button>
+              </td> 
+              
             
           @endforeach      
                
         </tbody>
       </table>
     
+    </div>
+    <div class="modal fade" id="data-barang" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Yakin Barang ini akan Dikeluarkan ?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="{{ route('brgklr.store') }}">
+              @csrf              
+              <div class="mb-3">
+                <input type="hidden" name="id" id="data-brg">
+              </div>
+          </div>            
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Oke</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            {{-- <a href="generatePDF" class="btn btn-info" target="_blank">CETAK PDF</a> --}}
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal Batal BM -->
@@ -91,6 +127,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script type="text/javascript">  
+// menampilkan data id untuk memindahkan view ke tabel BK
+$(document).on('click','#btn-data-barang',function(){
+      let id = $(this).data('id');
+      console.log(id);
+      $('#data-brg').val(id);
+  }); 
+  
 
   // Menampilkan data id untuk add to BM (opsional)
   $(document).on('click','#btn-batal-bm',function(){

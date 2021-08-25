@@ -19,13 +19,13 @@
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body"> 
 
-                          <li> <a class="waves-effect waves-dark" href="/PP" aria-expanded="false"><i class="mdi mdi-inbox-arrow-down"></i><span class="hide-menu">  Permintaan Pembelian</span></a>
+                          <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/PP" aria-expanded="false"><i class="mdi mdi-inbox-arrow-down"></i><span class="hide-menu">  Permintaan Pembelian</span></a>
                           </li>
-                          <li> <a class="waves-effect waves-dark" href="/brgmsk" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">  Barang Masuk</span></a>
+                          <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/brgmsk" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">  Barang Masuk</span></a>
                           </li>
-                          <li> <a class="waves-effect waves-dark" href="/brgklr" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">  Barang Keluar</span></a>
+                          <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/brgklr" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">  Barang Keluar</span></a>
                           </li>
-                          <li> <a class="waves-effect waves-dark" href="/invoice" aria-expanded="false"><i class="mdi mdi-book"></i><span class="hide-menu">  Invoice</span></a>
+                          <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/invoice" aria-expanded="false"><i class="mdi mdi-book"></i><span class="hide-menu">  Invoice</span></a>
                           </li>
         
                      
@@ -51,11 +51,11 @@
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
                           
-                          <li> <a class="waves-effect waves-dark" href="/lap" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Barang Masuk</span></a>
+                          <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/lap" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Barang Masuk</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/lap" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Barang Keluar</span></a>
+                        <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/lapBK" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Barang Keluar</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/lap" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Keuangan</span></a>
+                        <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/lapKEU" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">  Laporan Keuangan</span></a>
                         </li>
 
                         </div>
@@ -73,23 +73,14 @@
                     <div id="collapseeuy" class="collapse show" aria-labelledby="headingeuy" data-parent="#accordion">
                       <div class="card-body"> 
 
-                        <li> <a class="waves-effect waves-dark" href="/Masterbrg" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Barang</span></a>
+                        <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/Masterbrg" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Barang</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="/masterpembeli" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Pembeli</span></a>
+                        <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/masterpembeli" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Pembeli</span></a>
                       </li>
-                      <li> <a class="waves-effect waves-dark" href="/" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Supplier</span></a>
+                      <li> <a style="text-decoration:none" class="waves-effect waves-dark" href="/mastersupplier" aria-expanded="false"><i class="mdi mdi-account-box"></i><span class="hide-menu">  Kelola Supplier</span></a>
                       </li>
                     </li>
-                    <li> 
-                     
-                     
-
-                      
-                            
-                            
-                    </li>
-                  </li>
-
+                    <li>                     
       
                         
                    
@@ -108,5 +99,5 @@
              
                   
                   
-                </nav>
+              
               

@@ -23,23 +23,23 @@
     </div>
     <p></p>
   
-  <div class="row">
+  {{-- <div class="row">
     <div class="col">
       <div>
-      </div>
+      </div> --}}
       
       <!-- DATA BARANG -->
-      <div class="mb-4">
+      {{-- <div class="mb-4">
         <a class="btn btn-danger" data-toggle="collapse" href="#databarang" role="button" aria-expanded="false" aria-controls="collapseExample">
           Tabel Data Barang
         </a>
       
         <div class="collapse" id="databarang">
           <div class="card-title">Header</div>
-          <div class="card card-body">
+          <div class="card card-body"> --}}
             
             {{-- tabel data barang --}}
-            <div class="table-wrapper-scroll-y my-custom-scrollbar">                
+            {{-- <div class="table-wrapper-scroll-y my-custom-scrollbar">                
               <table class="table table-bordered table-striped mb-0">
                 <thead class="table-dark">
                   <tr>
@@ -88,15 +88,19 @@
           </div>
           <div class="card-text">Footer</div>
         </div>
-      </div>
+      </div> --}}
       
       <!-- BARANG KELUAR -->
+     
+
+
+      <p></p>
       <div>
-        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#barangkeluar" aria-expanded="false" aria-controls="collapseExample">
+        {{-- <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#barangkeluar" aria-expanded="false" aria-controls="collapseExample">
           Tabel Barang Keluar
         </button>
         <div class="collapse" id="barangkeluar">
-          <div class="card card-body">
+          <div class="card card-body"> --}}
 
             {{-- tabel barang keluar --}}
             <div class="table-wrapper-scroll-y my-custom-scrollbar">                
@@ -148,10 +152,10 @@
               </table>            
             </div>  
 
-          </div>
+          {{-- </div>
         </div>
       </div>
-     
+      --}}
       <div align="right"> <br>
         
         <a href="suratjalanpdf" class="btn btn-success" target="_blank">Cetak Surat Jalan</a>

@@ -47,6 +47,20 @@ class PermintaanPembelian extends Model
                     ->select('permintaan_pembelians.*', 'master_barangs.nama_barang', 'master_pembelis.pembeli')
                     ->where('permintaan_pembelians.id',$id);
     }
+    static function getLastID(){
+        $getLastData = DB::table('permintaan_pembelians')->orderBy('id','DESC')->first();
+        if(empty($getLastData->id)){ 
+            return '1'; 
+        }else{
+            if(empty($getLastData->id)){
+                return '1';
+            }else{
+
+                $temp = $getLastData->id;
+                $removeInitial = substr($temp,1);   
+            }
+        }    
+    }
 
     
 }

@@ -79,7 +79,7 @@ class TransaksiBarangKeluarController extends Controller
         // Untuk update status_bk di tabel PP
         PermintaanPembelian::where('id', $request->get('id'))->update(['status' => 2]);
         
-        return redirect('/brgklr')->with('added_success', 'Data Berhasil di Keluarkan');
+        return redirect('/brgmsk')->with('added_success', 'Data Berhasil di Keluarkan');
     }
 
     /**

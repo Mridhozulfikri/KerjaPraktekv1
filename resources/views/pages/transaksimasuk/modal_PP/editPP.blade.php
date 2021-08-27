@@ -44,7 +44,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">QTY:</label>
-                  <input type="number" name="qty" id="edit-qty" class="form-control"  required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" oninput="setCustomvalidity('')">                  
+                    <input type="number" name="qty" id="edit-qty" class="form-control"  required oninvalid="this.setCustomvalidity('Harap isi bidang ini')" oninput="setCustomvalidity('')">                  
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">Harga Beli:</label>

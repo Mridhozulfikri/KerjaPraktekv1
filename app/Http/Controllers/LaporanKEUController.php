@@ -30,7 +30,7 @@ class LaporanKEUController extends Controller
             
         $lapkeuangan = PermintaanPembelian::join('transaksi_barang_keluars', 'permintaan_pembelians.id', '=', 'transaksi_barang_keluars.pp_bm_id')
         ->select('permintaan_pembelians.*','transaksi_barang_keluars.*', 'transaksi_barang_keluars.id', 'permintaan_pembelians.no_pp')
-        ->where('status_invoice', 1)
+        ->where('status_invoice', 2)
         ->get(); 
         
         return view('pages.laporan.laporanKEU', compact(['lapkeuangan']));

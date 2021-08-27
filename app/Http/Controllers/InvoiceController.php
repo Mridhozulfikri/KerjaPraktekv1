@@ -14,13 +14,14 @@ class InvoiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
- 
+    { 
         $invoice = TransaksiBarangKeluar::all();
         return view('pages.laporan.invoice',compact('invoice'));
     }
+    
     public function changeStatus(Request $request)
     {
+        dd($request);
         $invoice = TransaksiBarangKeluar::find($request->id);
         $invoice->status_invoice = $request->status_invoice;
         $invoice->save();

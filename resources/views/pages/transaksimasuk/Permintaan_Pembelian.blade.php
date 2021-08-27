@@ -202,14 +202,15 @@
             success: function(result){       
                 $('#kodebrg').html('<p value="">-- Pilih Kode Barang --</p>');
                 $.each(result, function(key, value){
-                  $('#kode_brg').html('<input name="kode_barang" value="'+ value.kode_barang +'" class="form-control" readonly></input>');
-                  $('#harga_beli').html('<input name="harga_beli" value="'+ value.harga_beli +'" class="form-control" readonly></input>');                                    
+                  $('#kode_barang').html('<input name="kode_barang" value="'+ value.kode_barang +'" class="form-control" readonly></input>');
+                  $('#harga_beli').html('<input name="harga_beli" value="'+ value.harga_beli +'" class="form-control" readonly></input>');                                                        
                 });             
               }
           });  
       } else {
         $('#kode_brg').empty();
         $('#harga_beli').empty();
+        $('#qty').empty();
       }       
     });
   //});

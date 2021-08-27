@@ -32,7 +32,7 @@ Route::resource('/mastersupplier', 'MasterSupplierController');
 
 Route::resource('/masterpembeli', 'MasterpembeliController');
 Route::resource('/invoice', 'InvoiceController');
-Route::get('changeStatus', 'InvoiceController@changeStatus');
+Route::get('changeStatus/{invoice}', 'InvoiceController@changeStatus')->name('changeStatus');
 Route::get('suratjalanpdf', 'TransaksiBarangKeluarController@generatePDFs');
 
 Route::get('laporanbm', 'LaporanController@generatePDFbm');
